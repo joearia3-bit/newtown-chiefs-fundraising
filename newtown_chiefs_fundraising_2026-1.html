@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Newtown Chiefs Fundraising Drive - supporting travel and logistics for the Senior Team to Cairns, Australia, September 16-30, 2026.">
+<title>Newtown Chiefs | Cairns 2026 Fundraising Drive</title>
+<style>
+  :root{
+    --purple:#6d1bb3;
+    --deep-purple:#3a0b62;
+    --black:#0b0b0d;
+    --yellow:#ffd21c;
+    --white:#fff;
+    --muted:#d9d4df;
+    --card:#17131c;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:var(--black);
+    color:var(--white);
+    line-height:1.6;
+  }
+  a{text-decoration:none;color:inherit}
+  .container{width:min(1100px,92%);margin:auto}
+  header{
+    background:rgba(11,11,13,.94);
+    border-bottom:2px solid var(--yellow);
+    position:sticky;top:0;z-index:10;
+  }
+  nav{
+    min-height:68px;display:flex;align-items:center;
+    justify-content:space-between;gap:20px;
+  }
+  .brand{font-weight:900;letter-spacing:.5px;font-size:1.1rem}
+  .brand span{color:var(--yellow)}
+  nav a{font-weight:700;color:#eee;margin-left:18px}
+  nav a:hover{color:var(--yellow)}
+  .hero{
+    min-height:600px;
+    display:flex;align-items:center;
+    background:
+      radial-gradient(circle at 80% 25%, rgba(109,27,179,.55), transparent 35%),
+      linear-gradient(135deg,var(--deep-purple),var(--black) 65%);
+    position:relative;overflow:hidden;
+  }
+  .hero:after{
+    content:"";position:absolute;width:360px;height:360px;border-radius:50%;
+    right:-100px;bottom:-140px;background:var(--yellow);opacity:.12;
+  }
+  .hero-content{padding:80px 0;position:relative;z-index:1;max-width:760px}
+  .badge{
+    display:inline-block;background:var(--yellow);color:var(--black);
+    font-weight:900;padding:8px 14px;border-radius:999px;margin-bottom:18px;
+  }
+  h1{font-size:clamp(2.5rem,7vw,5.4rem);line-height:.98;margin:0 0 20px}
+  h1 span{color:var(--yellow)}
+  .hero p{font-size:clamp(1.05rem,2vw,1.3rem);color:var(--muted);max-width:680px}
+  .dates{
+    display:flex;flex-wrap:wrap;gap:12px;margin:28px 0;
+  }
+  .date-box{
+    border:1px solid rgba(255,210,28,.6);background:rgba(0,0,0,.3);
+    padding:12px 16px;border-radius:10px;font-weight:800;
+  }
+  .btn{
+    display:inline-block;padding:14px 22px;border-radius:10px;
+    font-weight:900;background:var(--yellow);color:var(--black);
+    margin-right:10px;border:2px solid var(--yellow);
+  }
+  .btn.alt{background:transparent;color:var(--white)}
+  .btn:hover{transform:translateY(-2px)}
+  section{padding:75px 0}
+  .section-title{text-align:center;margin-bottom:42px}
+  .section-title h2{font-size:2.2rem;margin:0 0 8px}
+  .section-title p{color:var(--muted);margin:0}
+  .activities{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:18px;
+  }
+  .card{
+    background:linear-gradient(180deg,#1d1822,#121015);
+    border:1px solid #342b3d;border-top:4px solid var(--purple);
+    border-radius:15px;padding:25px;transition:.2s;
+  }
+  .card:hover{transform:translateY(-5px);border-top-color:var(--yellow)}
+  .icon{font-size:2rem}
+  .card h3{margin:12px 0 7px;color:var(--yellow)}
+  .card p{color:var(--muted);margin:0}
+  .mission{
+    background:var(--purple);
+    text-align:center;
+  }
+  .mission h2{font-size:2.5rem;margin:0 0 10px}
+  .mission p{max-width:750px;margin:0 auto;color:#f5eaff;font-size:1.1rem}
+  .info-grid{
+    display:grid;grid-template-columns:1fr 1fr;gap:25px;
+  }
+  .info{
+    background:var(--card);border-radius:15px;padding:30px;border:1px solid #302836;
+  }
+  .info h3{color:var(--yellow);margin-top:0}
+  .contact{
+    display:grid;grid-template-columns:1fr 1fr;gap:18px;
+  }
+  .person{
+    background:#151218;padding:24px;border-left:5px solid var(--yellow);border-radius:10px;
+  }
+  .person strong{display:block;font-size:1.15rem}
+  footer{
+    border-top:1px solid #2e2932;text-align:center;padding:28px 0;
+    color:#aaa;font-size:.9rem;
+  }
+  @media(max-width:800px){
+    .activities{grid-template-columns:repeat(2,1fr)}
+    .info-grid,.contact{grid-template-columns:1fr}
+    nav .links{display:none}
+  }
+  @media(max-width:520px){
+    .activities{grid-template-columns:1fr}
+    .hero{min-height:560px}
+    section{padding:55px 0}
+    .btn{display:block;text-align:center;margin:10px 0}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="brand">NEWTOWN <span>CHIEFS</span></div>
+      <div class="links">
+        <a href="#activities">Fundraising</a>
+        <a href="#support">Support</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="badge">CAIRNS 2026 • FUNDRAISING DRIVE</div>
+      <h1>Support the <span>Newtown Chiefs</span></h1>
+      <p>
+        Help us raise funds for travel and logistics for our Senior Team's
+        trip to Cairns, Australia.
+      </p>
+      <div class="dates">
+        <div class="date-box">🇵🇬 September 16, 2026</div>
+        <div class="date-box">🇦🇺 September 30, 2026</div>
+      </div>
+      <a class="btn" href="#support">Support the Chiefs</a>
+      <a class="btn alt" href="#activities">See Fundraising Activities</a>
+    </div>
+  </section>
+
+  <section id="activities">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Fundraising Activities</h2>
+        <p>Join us, participate and help get the Chiefs to Cairns.</p>
+      </div>
+
+      <div class="activities">
+        <div class="card">
+          <div class="icon">🎟️</div>
+          <h3>Raffle Tickets</h3>
+          <p>Buy a raffle ticket and support the Senior Team's journey.</p>
+        </div>
+        <div class="card">
+          <div class="icon">💃</div>
+          <h3>Fundraising Dance</h3>
+          <p>Come along to our fundraising dance at Lamana and support the drive.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🎯</div>
+          <h3>Beer Dart</h3>
+          <p>Take part in the Beer Dart fundraising activity and help the Chiefs.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🍖</div>
+          <h3>BBQ Fundraising</h3>
+          <p>Enjoy a BBQ while contributing to the team's travel and logistics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mission">
+    <div class="container">
+      <h2>Every Contribution Counts</h2>
+      <p>
+        Your support will help cover the travel and logistics needed for the
+        Newtown Chiefs Senior Team to make the journey to Cairns, Australia.
+        Stand with the team and be part of the journey.
+      </p>
+    </div>
+  </section>
+
+  <section id="support">
+    <div class="container">
+      <div class="section-title">
+        <h2>How You Can Support</h2>
+        <p>Choose a fundraising activity or contact the team directly.</p>
+      </div>
+
+      <div class="info-grid">
+        <div class="info">
+          <h3>Get Involved</h3>
+          <p>
+            Support us by purchasing raffle tickets, attending the fundraising
+            dance at Lamana, joining the Beer Dart activity, or supporting our BBQ fundraising.
+          </p>
+        </div>
+        <div class="info">
+          <h3>Donation & Payment Details</h3>
+          <p>
+            Payment and donation details can be added here when they are confirmed.
+          </p>
+          <a class="btn" href="#contact">Contact the Team</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Fundraising Contacts</h2>
+        <p>For fundraising information, tickets and support.</p>
+      </div>
+
+      <div class="contact">
+        <div class="person">
+          <strong>Joe Aria</strong>
+          <span>Fundraising Manager</span>
+        </div>
+        <div class="person">
+          <strong>Nick Kevin</strong>
+          <span>Treasurer</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <strong>Newtown Chiefs Fundraising Drive • Cairns 2026</strong><br>
+    September 16–30, 2026 • Travel & Logistics Support
+  </div>
+</footer>
+
+</body>
+</html>
